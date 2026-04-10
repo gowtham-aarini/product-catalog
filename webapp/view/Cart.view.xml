@@ -1,0 +1,74 @@
+<mvc:View
+  controllerName="productcatalog.controller.Cart"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+
+  <Page title="Cart">
+
+    <content>
+
+      <VBox class="sapUiMediumMargin">
+
+        <!-- Cart Items -->
+        <List items="{cart>/items}" showSeparators="None">
+
+          <items>
+
+            <CustomListItem>
+              <VBox class="cartCard">
+
+                <!-- Product Name -->
+                <Title text="{cart>name}" level="H5"/>
+
+                <!-- Price -->
+                <ObjectNumber
+                  number="{cart>price}"
+                  unit="INR"/>
+
+                <!-- Quantity -->
+                <HBox class="sapUiSmallMarginTop" alignItems="Center">
+
+                  <Text text="Qty"/>
+
+                  <StepInput
+                    value="{cart>quantity}"
+                    min="1"
+                    width="100px"
+                    change="onQuantityChange"
+                    class="sapUiSmallMarginBegin"/>
+
+                  <ToolbarSpacer/>
+
+                  <!-- Remove Button -->
+                  <Button
+                    text="Remove"
+                    type="Reject"
+                    press="onRemove"/>
+                </HBox>
+
+              </VBox>
+            </CustomListItem>
+
+          </items>
+
+        </List>
+
+        <!-- Total Section -->
+        <Toolbar class="sapUiMediumMarginTop">
+
+          <Title text="Total"/>
+          <ToolbarSpacer/>
+
+          <ObjectNumber
+            number="{cart>/total}"
+            unit="INR"/>
+
+        </Toolbar>
+
+      </VBox>
+
+    </content>
+
+  </Page>
+
+</mvc:View>

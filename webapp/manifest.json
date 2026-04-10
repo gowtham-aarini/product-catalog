@@ -1,0 +1,48 @@
+{
+  "sap.app": {
+    "id": "productcatalog",
+    "type": "application",
+    "title": "Product Catalog App"
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "libs": {
+        "sap.m": {}
+      }
+    },
+    "rootView": {
+      "viewName": "productcatalog.view.App",
+      "type": "XML"
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "productcatalog.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "productList",
+          "target": "productList"
+        },
+        {
+          "pattern": "cart",
+          "name": "cart",
+          "target": "cart"
+        }
+      ],
+      "targets": {
+        "productList": {
+          "viewName": "ProductList"
+        },
+        "cart": {
+          "viewName": "Cart"
+        }
+      }
+    }
+  }
+}
+

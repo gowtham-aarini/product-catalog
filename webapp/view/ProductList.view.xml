@@ -1,0 +1,103 @@
+<mvc:View
+  controllerName="productcatalog.controller.ProductList"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <Page>
+    <content>
+      <VBox alignItems="End">
+
+       
+        <VBox width="100%" >
+      <!-- Tabs -->
+  <IconTabBar
+  select="onFilterSelect">
+        
+
+        <items>
+          
+          <IconTabFilter text="All" key="All"/>
+          
+        </items>
+
+        <content>
+        
+  <Toolbar>
+
+  <!-- LEFT: Search -->
+  <SearchField
+    width="1000px"
+    placeholder="Search products"
+    liveChange="onSearch"/>
+
+  
+  <ToolbarSpacer/>
+
+ <Button
+  text="{= 'Cart (' + ${cart>/count} + ')' }"
+  width="200px"
+  icon="sap-icon://cart"
+  press="onGoToCart"/>
+
+</Toolbar>
+   
+  <Table
+    id="productsTable"
+    items="{products>/products}"
+    class="sapUiMediumMargin">
+
+   <columns>
+
+  <Column>
+    <Text text="Product Name"/>
+  </Column>
+
+  <Column>
+    <Text text="Price"/>
+  </Column>
+
+  <Column>
+    <Text text="Category"/>
+  </Column>
+
+  <Column>
+    <Text text="Rating"/>
+  </Column>
+
+  <Column>
+    <Text text="Action"/>
+  </Column>
+
+</columns>
+
+    <items>
+  <ColumnListItem>
+    <cells>
+      <Text text="{products>name}"/>
+      <Text text="{products>category}"/>
+      <Text text="{products>price}"/>
+      
+
+    <ObjectNumber number="{products>rating}" unit="/5"/>
+
+      <Button
+        text="Add to Cart"
+        type="Emphasized"
+        press="onAddToCart"/>
+    </cells>
+  </ColumnListItem>
+</items>
+
+  </Table>
+
+</content>
+
+      </IconTabBar>
+</VBox>
+
+      </VBox>
+    </content>
+
+  </Page>
+
+</mvc:View>

@@ -1,0 +1,7 @@
+{
+  "name": "product-catalog",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  }
+}

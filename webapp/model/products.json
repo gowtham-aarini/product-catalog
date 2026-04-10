@@ -1,0 +1,24 @@
+{
+  "products": [
+    { "id": 1, "name": "Laptop", "price": 50000, "category": "Electronics", "rating": 4 },
+    { "id": 2, "name": "Phone", "price": 20000, "category": "Electronics", "rating": 5 },
+    { "id": 3, "name": "Shoes", "price": 3000, "category": "Fashion", "rating": 3 },
+    { "id": 4, "name": "Headphones", "price": 2500, "category": "Electronics", "rating": 4 },
+    { "id": 5, "name": "Watch", "price": 4000, "category": "Fashion", "rating": 5 },
+    { "id": 6, "name": "Backpack", "price": 1500, "category": "Fashion", "rating": 3 },
+    { "id": 7, "name": "Tablet", "price": 30000, "category": "Electronics", "rating": 4 },
+    { "id": 8, "name": "Keyboard", "price": 1200, "category": "Electronics", "rating": 4 },
+    { "id": 9, "name": "Mouse", "price": 800, "category": "Electronics", "rating": 3 },
+    { "id": 10, "name": "T-Shirt", "price": 700, "category": "Fashion", "rating": 4 },
+    { "id": 11, "name": "Jeans", "price": 1800, "category": "Fashion", "rating": 5 },
+    { "id": 12, "name": "Jacket", "price": 3500, "category": "Fashion", "rating": 4 },
+    { "id": 13, "name": "Smart TV", "price": 60000, "category": "Electronics", "rating": 5 },
+    { "id": 14, "name": "Speaker", "price": 2200, "category": "Electronics", "rating": 4 },
+    { "id": 15, "name": "Power Bank", "price": 1500, "category": "Electronics", "rating": 3 },
+    { "id": 16, "name": "Sunglasses", "price": 1200, "category": "Fashion", "rating": 4 },
+    { "id": 17, "name": "Cap", "price": 500, "category": "Fashion", "rating": 3 },
+    { "id": 18, "name": "Formal Shoes", "price": 4000, "category": "Fashion", "rating": 5 },
+    { "id": 19, "name": "Gaming Console", "price": 45000, "category": "Electronics", "rating": 5 },
+    { "id": 20, "name": "Bluetooth Earbuds", "price": 3000, "category": "Electronics", "rating": 4 }
+  ]
+}
